@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+body > div {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222222;
+    text-align: center;
+    padding: 3vw;
+}
+
+header h1 {
+    font: normal normal normal calc(28px + 2vw) Georgia, serif;
+}
+
+header p {
+    font: normal normal normal calc(12px + 0.5vw) Arial, sans-serif;
+    margin-top: 1vw;
+}
+
+nav {
+    padding: 1vw;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0.5vw;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    font: normal normal normal calc(11px + 0.5vw) Arial, sans-serif;
+}
+
+.home-nav {
+    background-color: #f57c00;
+}
+
+.home-nav a {
+    background-color: black;
+    color: white;
+}
+
+.home-nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.home-page main {
+    background-color: #331a00;
+    min-height: 100vh;
+    padding: 5vw;
+}
+
+.home-page main h2 {
+    text-align: center;
+    margin-bottom: 3vw;
+    font: normal normal normal calc(22px + 1.5vw) Georgia, serif;
+}
+
+.home-page main img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.home-page main p {
+    margin-top: 3vw;
+    font: normal normal normal calc(14px + 0.4vw) Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.pumpkin-nav {
+    background-color: #330033;
+}
+
+.pumpkin-nav a {
+    background-color: #660066;
+    color: #ff9933;
+}
+
+.pumpkin-nav a:hover {
+    background-color: #ff9933;
+    color: #330033;
+}
+
+.pumpkin-page main {
+    background-color: #110011;
+    min-height: 100vh;
+    padding: 5vw;
+}
+
+.pumpkin-page main h2 {
+    text-align: center;
+    margin-bottom: 4vw;
+    font: normal normal normal calc(25px + 2vw) fantasy;
+}
+
+.pumpkin-page main h3 {
+    margin-top: 4vw;
+    margin-bottom: 1vw;
+    font: normal normal normal calc(18px + 1vw) fantasy;
+}
+
+.pumpkin-page main p {
+    font: normal normal normal calc(14px + 0.5vw) fantasy;
+    line-height: 1.7;
+}
+
+.spooky-text {
+    text-align: center;
+    margin-top: 6vw;
+    font: italic normal bold calc(18px + 1vw) fantasy;
+}
+
+footer {
+    background-color: #222222;
+    text-align: center;
+    padding: 2vw;
+}
+
+footer p {
+    font: normal normal normal calc(11px + 0.4vw) Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    body > div {
+        width: 90vw;
+    }
+
+    header {
+        padding: 5vw;
+    }
+
+    nav {
+        padding: 2vw;
+    }
+
+    nav li {
+        padding: 0.3vw;
+    }
+
+    nav a {
+        padding: 2vw 1.5vw;
+    }
+
+    .home-page main,
+    .pumpkin-page main {
+        padding: 5vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    body > div {
+        width: 90vw;
+    }
+
+    header {
+        padding: 5vw;
+    }
+
+    nav {
+        padding: 2vw 0;
+    }
+
+    nav li {
+        padding: 0.2vw;
+    }
+
+    nav a {
+        padding: 2vw 1vw;
+        font-size: calc(9px + 0.5vw);
+    }
+
+    .home-page main,
+    .pumpkin-page main {
+        padding: 5vw;
+    }
+}
