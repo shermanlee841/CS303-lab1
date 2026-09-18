@@ -30,122 +30,94 @@ header p {
 nav {
     width: 30%;
     padding: 1vw;
+    background-color: #f57c00;
 }
 
 nav ul {
-    width: 100%;
-    margin: auto;
-    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    padding: 0;
 }
 
 nav li {
-    margin: 1vh 0;
-    display: inline;
-    padding:  5px;
+    padding: 0.5vw;
 }
 
 nav a {
     display: block;
-    padding: 1vh 1vw;
-    text-decoration: none;
-    font-size: calc(12px + 0.3vw);
-}
-
-.home-nav {
-    background-color: #f57c00;
-}
-
-.home-nav a {
     background-color: black;
     color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1vw;
+    font: bold calc(11px + 0.5vw) Arial, sans-serif;
 }
 
-.home-nav a:hover {
-    background-color: white;
+nav a .hover {
+    background-color: orange;
     color: black;
 }
 
-.home-page main {
+main {
     background-color: #331a00;
     min-height: 100vh;
     padding: 5vw;
 }
 
-.home-page main h2 {
+main h2 {
     text-align: center;
     margin-bottom: 3vw;
-    font: normal normal normal calc(22px + 1.5vw) Georgia, serif;
+    font: bold calc(22px + 1.5vw) Georgia, serif;
 }
 
-.home-page main img {
+main h3 {
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    font: bold calc(18px + 1vw) Georgia, serif;
+}
+
+main p {
+    margin-top: 2vw;
+    line-height: 1.6;
+    font: normal calc(14px + 0.4vw) Arial, sans-serif;
+}
+
+main img {
     display: block;
     max-width: 100%;
     margin: auto;
 }
 
-.home-page main p {
-    margin-top: 3vw;
-    font: normal normal normal calc(14px + 0.4vw) Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.pumpkin-nav {
-    background-color: #330033;
-}
-
-.pumpkin-nav a {
-    background-color: #660066;
-    color: #ff9933;
-}
-
-.pumpkin-nav a:hover {
-    background-color: #ff9933;
-    color: #330033;
-}
-
-.pumpkin-page main {
-    background-color: #110011;
-    min-height: 100vh;
-    padding: 5vw;
-}
-
-.pumpkin-page main h2 {
-    text-align: center;
-    margin-bottom: 4vw;
-    font: normal normal normal calc(25px + 2vw) fantasy;
-}
-
-.pumpkin-page main h3 {
-    margin-top: 4vw;
-    margin-bottom: 1vw;
-    font: normal normal normal calc(18px + 1vw) fantasy;
-}
-
-.pumpkin-page main p {
-    font: normal normal normal calc(14px + 0.5vw) fantasy;
-    line-height: 1.7;
-}
-
-.spooky-text {
-    text-align: center;
-    margin-top: 6vw;
-    font: italic normal bold calc(18px + 1vw) fantasy;
-}
-
-.scary-nav {
-    background-color: #330000;
-}
-
-.scary-nav a {
-    background-color: #660000;
-    color: white;
-}
-
-.scary-nav a:hover {
+#scaryButton {
+    display: block;
+    margin: 0 auto 3vw auto;
+    padding: 1vw 2vw;
     background-color: black;
-    color: #ff0000;
+    color: white;
+    border: 2px solid white;
+    font: bold calc(13px + 0.5vw) Arial, sans-serif;
 }
+
+#scaryButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#scaryContent {
+    display: none;
+}
+
+.monsters {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.monsters img {
+    max-width: 30%;
+}
+
 footer {
     background-color: #222222;
     text-align: center;
@@ -158,33 +130,52 @@ footer p {
 
 @media screen and (max-width: 1000px) {
 
-    main {
-        width: 100%;
-    }
-
-    nav {
-        width: 100%;
+    .page {
+        width: 90vw;
     }
 
     nav ul {
-        width: 100%;
-        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        white-space: nowrap;
     }
 
     nav li {
-        margin: 0;
-        display: block;
+        padding: 0.3vw;
     }
 
     nav a {
-        padding: 1vh 1.5vw;
+        padding: 1.5vw 1vw;
     }
 
-    .home-page main,
-    .pumpkin-page main {
+    .monsters {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .page {
+        width: 90vw;
+    }
+
+    nav a {
+        padding: 2vw 0.7vw;
+        font-size: calc(9px + 0.5vw);
+    }
+
+    main {
         padding: 5vw;
     }
+
+    .monsters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .monsters img {
+        max-width: 80%;
+    }
+
 }
