@@ -3,12 +3,11 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0;
     background-color: black;
     color: white;
 }
 
-body > div {
+.page {
     width: 80vw;
     margin: 0 auto;
 }
@@ -30,7 +29,7 @@ header p {
 
 nav {
     width: 30%;
-    padding: 5px;
+    padding: 1vw;
 }
 
 nav ul {
@@ -134,6 +133,19 @@ nav a {
     font: italic normal bold calc(18px + 1vw) fantasy;
 }
 
+.scary-nav {
+    background-color: #330000;
+}
+
+.scary-nav a {
+    background-color: #660000;
+    color: white;
+}
+
+.scary-nav a:hover {
+    background-color: black;
+    color: #ff0000;
+}
 footer {
     background-color: #222222;
     text-align: center;
