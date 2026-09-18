@@ -29,27 +29,28 @@ header p {
 }
 
 nav {
-    padding: 1vw;
+    width: 30%;
+    padding: 5px;
 }
 
 nav ul {
+    width: 100%;
+    margin: auto;
+    padding: 1vh 1vw;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    white-space: nowrap;
 }
 
 nav li {
-    display: inline-block;
-    padding: 0.5vw;
+    margin: 1vh 0;
+    display: inline;
+    padding:  5px;
 }
 
 nav a {
-    display: inline-block;
+    display: block;
+    padding: 1vh 1vw;
     text-decoration: none;
-    padding: 1vw 2vw;
-    font: normal normal normal calc(11px + 0.5vw) Arial, sans-serif;
+    font-size: calc(12px + 0.3vw);
 }
 
 .home-nav {
@@ -143,56 +144,31 @@ footer p {
     font: normal normal normal calc(11px + 0.4vw) Arial, sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 
-    body > div {
-        width: 90vw;
-    }
-
-    header {
-        padding: 5vw;
+    main {
+        width: 100%;
     }
 
     nav {
-        padding: 2vw;
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav li {
-        padding: 0.3vw;
+        margin: 0;
+        display: block;
     }
 
     nav a {
-        padding: 2vw 1.5vw;
-    }
-
-    .home-page main,
-    .pumpkin-page main {
-        padding: 5vw;
-    }
-}
-
-
-@media screen and (max-width: 520px) {
-
-    body > div {
-        width: 90vw;
-    }
-
-    header {
-        padding: 5vw;
-    }
-
-    nav {
-        padding: 2vw 0;
-    }
-
-    nav li {
-        padding: 0.2vw;
-    }
-
-    nav a {
-        padding: 2vw 1vw;
-        font-size: calc(9px + 0.5vw);
+        padding: 1vh 1.5vw;
     }
 
     .home-page main,
